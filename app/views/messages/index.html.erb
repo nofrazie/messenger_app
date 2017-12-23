@@ -1,0 +1,10 @@
+<%= link_to "New message", new_message_path, class: "btn btn-home" %>
+
+<div class="messages">
+  <% @messages.each do |message| %>
+    <div class="message">
+      <p><%= message.content %></p>
+      <p class="time"><%= time_ago_in_words(message.created_at) %></p>
+    </div>
+  <% end %>
+</div>

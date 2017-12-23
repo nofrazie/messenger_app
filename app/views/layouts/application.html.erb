@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MessengerApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h3 id="app_logo"><%= link_to "Messenger App", root_url %></h3>
+      </header>
+
+      <div class="main">
+        <%= yield %>
+      </div>
+
+      <section class="left-side">
+
+      </section>
+
+      <section class="right-side">
+
+      </section>
+
+      <footer>
+        <p>Created By: Nolan Frazier</p>
+      </footer>
+    </div>
+  </body>
+</html>
