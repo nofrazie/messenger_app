@@ -1,4 +1,4 @@
 <%= form_for @message do |f| %>
-  <%= f.text_area :content %>
+  <%= f.text_area :content, :autofocus => true %>
   <%= f.submit "Post", class: "btn" %>
 <% end %>
